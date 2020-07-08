@@ -1,0 +1,91 @@
+h1{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #007556
+}
+
+ul.navItems{
+    list-style-type: none;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.navItems{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #007556;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 72px;
+    position: sticky;
+    top: 500px;       
+}
+
+.header{
+    display: inline-block;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 40px;
+    grid-area: header;
+    
+}
+    
+.aboutMe{
+    padding-top: 20px;
+    padding-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #007556;
+    font-size: 16px;
+    grid-area: aboutMe;
+    
+}
+    
+.navigation{
+    width: 300px;
+    float: left;
+    height: 1200px;
+    margin-left: auto;
+    grid-area: navigation;
+    
+    
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 300px 200px 1fr;
+    grid-template-rows: 5px 75%;
+    grid-template-areas: 
+        "header header header"
+        "navigation heroText heroText"
+        "navigation daveHead aboutMe"
+        "navigation space space"
+    
+    
+}
+
+.daveHead{
+    grid-area: daveHead;
+    padding: 30px;
+    
+}
+
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    
+}
+
+.space{
+    grid-area: space
+}
+
+.heroText{
+    grid-area: heroText;
+}
